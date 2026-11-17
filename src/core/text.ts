@@ -1,33 +1,38 @@
 
-//extract words from a text
 export function getWords(text: string): string[] {
     const extracted = text.trim().split(/\s+/).filter(Boolean);
-    console.log(extracted)
     return extracted;
 };
 
-//counts the total of words
 export function getWordsCount(words: string[]): number {
-    console.log(words.length)
     return words.length;
 }
 
 export function getCharacterCount(text: string): number {
     const characters = text.length;
-    console.log(characters);
     return characters;
 }
 
 export function getCharacterCountWithoutSpaces(text: string): number {
-    const textWithoutSpaces = text.replace(/\s/, "");
+    const textWithoutSpaces = text.replace(/\s+/g, "");
     const characters = textWithoutSpaces.length
-    console.log(characters);
     return characters;
 }
 
-export function getSentenceCount(text: string) {
+export function getSentenceCount(text: string): number {
     const sentences = text.trim().split(".").filter(Boolean);
     const sentenceCount = sentences.length;
-    console.log(sentences, sentenceCount);
     return sentenceCount;
+}
+
+export function getParagraphCount(text: string): number {
+    const paragraphs = text.trim().split(/\n\s*\n/).filter(Boolean);
+    const paragraphsCount = paragraphs.length;
+    return paragraphsCount;
+}
+
+export function getAverage(total: number, count: number): number {
+    if (count === 0) return 0;
+    const avg = Number((total / count).toFixed(2));
+    return avg;
 }

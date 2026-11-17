@@ -36,14 +36,16 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 exports.__esModule = true;
-var text_js_1 = require("./core/text.js");
+var text_1 = require("./core/text");
 var main = function () { return __awaiter(void 0, void 0, void 0, function () {
     return __generator(this, function (_a) {
-        text_js_1.getWords('hello to you user');
-        text_js_1.getWordsCount(['hello', 'to', 'you', 'user']);
-        text_js_1.getCharacterCount("hello world");
-        text_js_1.getCharacterCountWithoutSpaces("hello world");
-        text_js_1.getSentenceCount("hello world. hello you.");
+        text_1.getWords('hello to you user');
+        text_1.getWordsCount(['hello', 'to', 'you', 'user']);
+        text_1.getCharacterCount("hello world");
+        text_1.getCharacterCountWithoutSpaces("hello world");
+        text_1.getSentenceCount("hello world. hello you.");
+        text_1.getParagraphCount("Hello\n\nWorld");
+        text_1.getAverage(13, 3);
         return [2 /*return*/];
     });
 }); };
