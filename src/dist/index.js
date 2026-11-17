@@ -41,6 +41,9 @@ var main = function () { return __awaiter(void 0, void 0, void 0, function () {
     return __generator(this, function (_a) {
         text_js_1.getWords('hello to you user');
         text_js_1.getWordsCount(['hello', 'to', 'you', 'user']);
+        text_js_1.getCharacterCount("hello world");
+        text_js_1.getCharacterCountWithoutSpaces("hello world");
+        text_js_1.getSentenceCount("hello world. hello you.");
         return [2 /*return*/];
     });
 }); };
