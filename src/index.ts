@@ -1,7 +1,9 @@
-import { getWords } from "./core/text.js";
+import { getWords, getWordsCount } from "./core/text.js";
 
 const main = async () => {
-    getWords('hello to you user')
+    getWords('hello to you user');
+    getWordsCount(['hello', 'to', 'you', 'user'])
+
 }
 
 main().catch((error: unknown) => {

@@ -40,6 +40,7 @@ var text_js_1 = require("./core/text.js");
 var main = function () { return __awaiter(void 0, void 0, void 0, function () {
     return __generator(this, function (_a) {
         text_js_1.getWords('hello to you user');
+        text_js_1.getWordsCount(['hello', 'to', 'you', 'user']);
         return [2 /*return*/];
     });
 }); };
