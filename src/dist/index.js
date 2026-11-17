@@ -36,10 +36,10 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 exports.__esModule = true;
-var statistics_js_1 = require("./core/statistics.js");
+var text_js_1 = require("./core/text.js");
 var main = function () { return __awaiter(void 0, void 0, void 0, function () {
     return __generator(this, function (_a) {
-        statistics_js_1.getWords('hello to you ');
+        text_js_1.getWords('hello to you user');
         return [2 /*return*/];
     });
 }); };

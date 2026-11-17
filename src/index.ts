@@ -1,7 +1,7 @@
-import { getWords } from "./core/statistics.js";
+import { getWords } from "./core/text.js";
 
 const main = async () => {
-    getWords('hello to you ')
+    getWords('hello to you user')
 }
 
 main().catch((error: unknown) => {
