@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest"
-import { getAverage, getCharacterCount, getCharacterCountWithoutSpaces, getParagraphCount, getSentenceCount, getWords, getWordsCount } from '../../core/text';
+import { getCharacterCount, getWords, getWordsCount } from '../../core/text';
+import { getCharacterCountWithoutSpaces, getParagraphCount, getSentenceCount, getAverage } from "../../core/statistic"
 
 describe("getWords", () => {
     it.each([
