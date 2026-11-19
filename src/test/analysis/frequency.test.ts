@@ -1,12 +1,6 @@
 
 import { describe, it, expect } from "vitest";
-import {
-    getUniqueWords,
-    getDuplicatedWords,
-    getWordFrequency,
-    getFrequency
-} from "./frequency.js";
-
+import { getDuplicatedWords, getFrequency, getUniqueWords, getWordFrequency } from "../../core/frequency";
 describe("getUniqueWords", () => {
     it("should return unique words", () => {
         expect(getUniqueWords("hello world hello")).toEqual([
