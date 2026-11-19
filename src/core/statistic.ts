@@ -14,7 +14,6 @@ export function getStatistic(text: string): StatisticResult {
     const words = getWords(text);
 
     const wordCount = getWordsCount(words);
-    const characterCount = getCharacterCount(text);
     const sentencesCount = getSentenceCount(text);
 
     const result = {
