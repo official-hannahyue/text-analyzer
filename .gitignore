@@ -6,6 +6,7 @@ node_modules/
 dist/
 build/
 
+*.tgz
 # Environment variables
 .env
 .env.*

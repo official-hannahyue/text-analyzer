@@ -2,6 +2,13 @@
   "name": "text-analyzer",
   "version": "0.1.0",
   "description": "A command-line tool for analyzing and inspecting text.",
+    "repository": {
+    "type": "git",
+    "url": "https://github.com/official-hannahyue/text-analyzer.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
