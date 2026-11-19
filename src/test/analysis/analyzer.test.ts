@@ -1,6 +1,6 @@
 
 import { describe, it, expect } from "vitest";
-import { analyzeText } from "./analyze.js";
+import { analyzeText } from '../../core/analyzer';
 
 describe("analyzeText", () => {
     it("should return the complete analysis result", () => {
