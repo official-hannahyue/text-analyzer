@@ -26,6 +26,5 @@ export function getStatistic(text: string): StatisticResult {
         averageWordLength: getAverage(characterCount, wordCount),
         averageSentenceLength: getAverage(wordCount, sentencesCount)
     };
-    console.log(result)
     return result;
 }

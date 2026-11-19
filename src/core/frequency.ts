@@ -35,6 +35,5 @@ export function getFrequency(input: string | string[]): FrequencyResult {
         duplicatedWords: getDuplicatedWords(text),
         frequency: getWordFrequency(text)
     };
-    console.log(result)
     return result;
 }

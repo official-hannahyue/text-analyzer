@@ -39,6 +39,5 @@ export function getInspection(text: string): InspectionResult {
         shortestWord: getShortestWord(text),
         uniqueWords: getUniqueWords(text)
     };
-    console.log(result)
     return result;
 }
