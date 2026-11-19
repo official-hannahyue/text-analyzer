@@ -1,33 +1,32 @@
 {
   "name": "text-analyzer",
-  "version": "1.0.0",
-  "description": "",
-  "lisence": "MIT",
-  "private": true,
+  "version": "0.1.0",
+  "description": "A command-line tool for analyzing and inspecting text.",
+  "license": "MIT",
+  "type": "module",
   "main": "./dist/index.js",
-  "bin": {
-    "text-analyzer": "./src/dist/cli/index.js"
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
   },
+  "bin": {
+    "text-analyzer": "./dist/cli/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "dev": "tsx watch src/cli/index.ts",
     "build": "tsc",
-    "start": "node /dist/src/index.js",
+    "start": "node dist/cli/index.js",
     "test": "vitest",
-    "test:run": "vitest run"
-  },
-  "keywords": [],
-  "type": "module",
-  "devDependencies": {
-    "@types/node": "^26.6.6",
-    "tsx": "^4.23.15",
-    "typescript": "^7.0.2",
-    "vitest": "^5.1.0"
-  },
-  "allowScripts": {
-    "esbuild@0.28.2": true
-  },
-  "dependencies": {
-    "chalk": "^6.0.1",
-    "commander": "^15.1.0"
+    "test:run": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run typecheck && npm run test:run && npm run build"
   }
 }

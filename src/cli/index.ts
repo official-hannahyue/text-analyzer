@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import { Command } from "commander"
 import { analyzeCommand } from "./commands/analyze.js";
+import { frequencyCommand } from "./commands/frequency.js";
 
 const program = new Command();
 
@@ -14,5 +15,11 @@ program
     .description("Analyze a text file")
     .argument("<file>", "Path to the text file")
     .action(analyzeCommand);
+
+program
+    .command("frequency")
+    .description("Analyze word frequency in a text file")
+    .argument("<file>", "Path to the text file")
+    .action(frequencyCommand);
 
 program.parse()
