@@ -6,7 +6,13 @@ node_modules/
 dist/
 build/
 
+
+# NPM
+.npmrc
+
+#Package
 *.tgz
+
 # Environment variables
 .env
 .env.*

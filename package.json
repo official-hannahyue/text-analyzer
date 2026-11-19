@@ -1,12 +1,12 @@
 {
-  "name": "@official-hannahyue/text-analyzer",
+"name": "@official-hannahyue/text-analyzer",
   "repository": {
     "type": "git",
     "url": "https://github.com/official-hannahyue/text-analyzer.git"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
+"publishConfig": {
+  "registry": "https://npm.pkg.github.com"
+},
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",

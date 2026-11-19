@@ -23,8 +23,10 @@ export function getShortestWord(text: string): string | null {
 }
 export function getMostFrequentWord(text: string): string | null {
     const result = getFrequency(text);
-
     const entries = Object.entries(result.frequency);
+
+    if (entries.length === 0) return null;
+
     return entries.reduce((mostFrequent, current) => {
         return current[1] > mostFrequent[1]
             ? current

@@ -28,12 +28,12 @@ export function getWordFrequency(text: string): Record<string, number> {
 }
 export function getFrequency(input: string | string[]): FrequencyResult {
     const text = Array.isArray(input) ? input.join(" ") : input;
+    const words = getWords(text);
 
-    const result: FrequencyResult = {
-        totalWords: getWordsCount(input),
+    return {
+        totalWords: words.length,
         uniqueWords: getUniqueWords(text),
         duplicatedWords: getDuplicatedWords(text),
         frequency: getWordFrequency(text)
     };
-    return result;
 }

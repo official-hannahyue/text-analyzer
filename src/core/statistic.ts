@@ -23,7 +23,10 @@ export function getStatistic(text: string): StatisticResult {
         characterCountWithoutSpaces: getCharacterCountWithoutSpaces(text),
         sentencesCount,
         paragraphCount: getParagraphCount(text),
-        averageWordLength: getAverage(characterCount, wordCount),
+        averageWordLength: getAverage(
+            words.reduce((total, word) => total + word.length, 0),
+            wordCount
+        ),
         averageSentenceLength: getAverage(wordCount, sentencesCount)
     };
     return result;
